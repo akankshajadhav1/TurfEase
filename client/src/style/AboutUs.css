@@ -1,0 +1,129 @@
+/* General Styles */
+.about-page {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+/* Features Section */
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 1 1 calc(33.33% - 20px);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+/* Team Section */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.team-container div {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.team-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.about-footer {
+    background: #1a1a1a;
+    padding: 50px 0;
+    margin-top: 10px;
+}
+
+.about-footer p {
+    color: blue;
+    margin: 0;
+    font-size: 14px;
+}
+
+.about-social-icons {
+    color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.about-social-icons a {
+    text-decoration: none;
+    transition: white 0.3s;
+    font-size: 20px;
+}
+
+.about-social-icons a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        flex: 1 1 100%;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

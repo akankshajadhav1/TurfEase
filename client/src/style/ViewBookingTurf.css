@@ -1,0 +1,58 @@
+/* Container for the whole admin booking list */
+.admin-bookings-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Each booking card */
+.admin-booking-card {
+    background: #ffffff;
+    padding: 1.8rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover effect */
+.admin-booking-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Booking title */
+.admin-booking-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+/* Booking info lines */
+.admin-booking-card p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Bold labels inside paragraphs */
+.admin-booking-card p strong {
+    color: #111;
+}
+
+/* Error message style */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Page title */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}

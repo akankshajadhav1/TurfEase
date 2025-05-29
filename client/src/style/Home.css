@@ -1,0 +1,143 @@
+/* ============================
+   Home Page - Responsive Styles
+   ============================ */
+
+/* General Page Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+/* Call to Action Button */
+.cta-button {
+    background: #ffcc00;
+    color: #000;
+    font-size: 20px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background: #ff9900;
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.feature-box h3 {
+    color: #007bff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.feature-box p {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Home Page Container */
+.Userhome-container {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* Booking Button */
+.custom-book-btn {
+    font-weight: bold;
+    padding: 10px 18px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    transition: 0.3s;
+}
+
+.custom-book-btn:hover {
+    background-color: #004085;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .feature-box {
+        width: 90%;
+    }
+}

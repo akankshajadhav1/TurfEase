@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+/* Container */
+.Get-container {
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+    margin-left: 1%;
+
+}
+
+/* Loading & No Data Message */
+.loading-text,
+.no-data {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Grid Layout for Cards */
+.col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Turf Card Styling */
+.ground-card {
+    width: 500%;
+    max-width: 480px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.ground-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Turf Image */
+.ground-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ground-card:hover img {
+    opacity: 0.9;
+}
+
+/* Card Body */
+.ground-card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.ground-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.ground-card-price {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .ground-card {
+        max-width: 90%;
+    }
+}

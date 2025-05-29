@@ -1,0 +1,25 @@
+.table th,
+.table td {
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+thead.table-success {
+    background: linear-gradient(to right, #43cea2, #185a9d) !important;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
